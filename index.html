@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hometown</title>
+    <link rel="stylesheet" href="./lib/glider.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="home"></div>
+
+    <!----------------- sidebar ----------------->
+    <section>
+        <div id="nav">
+            <a href="javascript:void(0)" onclick="closeNav()" id="closebtn">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#sight">Sight</a>
+            <a href="#custom">Custom</a>
+            <a href="#development">Development</a>
+            <a href="#map">Map</a>
+            <a href="#forum">Forum</a>
+        </div>
+        <a href="javascript:void(0)" onclick="openNav()"><img src="./images/bars-solid.svg" id="openbtn"></a>
+    </section>
+
+    <!----------------- main ----------------->
+    <div id="main">
+
+        <!-- header -->
+        <section>
+            <div id="header">
+                <h1>Welcome to <span class="change-color">Guangzhou</span>, my hometown</h1>
+            </div>
+        </section>
+
+        <!-- slider -->
+        <section>
+            <div id="slider">
+                <div class="slide-content fade">
+                    <div class="slide-number">1 / 4</div>
+                    <img src="./images/slider/1.jpg" style="width:100%">
+                </div>
+                <div class="slide-content fade">
+                    <div class="slide-number">2 / 4</div>
+                    <img src="./images/slider/2.jpg" style="width:100%">
+                </div>
+                <div class="slide-content fade">
+                    <div class="slide-number">3 / 4</div>
+                    <img src="./images/slider/3.jpg" style="width:100%">
+                </div>
+                <div class="slide-content fade">
+                    <div class="slide-number">4 / 4</div>
+                    <img src="./images/slider/4.jpg" style="width:100%">
+                </div>
+                <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a id="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+
+        <!-- sight -->
+        <section>
+            <div id="sight" class="glider-contain multiple">
+                <h1><span class="change-color">Sights</span> in Guangzhou</h1>
+                <p>Find some interesting places to visit!</p>
+
+                <button class="glider-prev">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+
+                <div class="glider">
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/CantonTower.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/CantonTower.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>Canton Tower</figcaption>
+                        <p class="location">Haizhu District</p>
+                        <p class="intro">
+                            The Guangzhou TV Astronomical and Sightseeing Tower,
+                            is a 604 metres tall multi-purpose observation tower…
+                        </p>
+                    </figure>
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/ChimelongParadise.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/ChimelongParadise.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>Chimelong Paradise</figcaption>
+                        <p class="location">Panyu District</p>
+                        <p class="intro">
+                            Chimelong Paradise is the largest amusement park in China and boasts the 10 Inversion Roller
+                            Coaster…
+                        </p>
+                    </figure>
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/BaiyunMountain.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/BaiyunMountain.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>Baiyun Mountain</figcaption>
+                        <p class="location">Baiyun District</p>
+                        <p class="intro">
+                            Baiyun Mountain, known as White Cloud Mountain,
+                            is a mountain located at the north of Guangzhou, and which is about 427m…
+                        </p>
+                    </figure>
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/ChimelongSafariPark.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/ChimelongSafariPark.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>Chimelong Safari Park</figcaption>
+                        <p class="location">Panyu District</p>
+                        <p class="intro">
+                            The park with large populations of wild animal,
+                            is known as the most international standard of national wild animal zoo…
+                        </p>
+                    </figure>
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/ChenClanAncestralHall.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/ChenClanAncestralHall.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>ChenClan Ancestral Hall</figcaption>
+                        <p class="location">Liwan District</p>
+                        <p class="intro">
+                            It is built by the 72 Chen clans
+                            for their juniors' accommodation and preparation for the imperial examinations in
+                            Qing Dynasty…
+                        </p>
+                    </figure>
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/SunYat-senMemorialHall.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/SunYat-senMemorialHall.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>SunYat-sen Memorial Hall</figcaption>
+                        <p class="location">Yuexiu District</p>
+                        <p class="intro">
+                            The hall was designed by Lu Yanzhi and was built with funds raised by local
+                            and overseas Chinese people in memory of Sun Yat-sen…
+                        </p>
+                    </figure>
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/TempleOfTheSixBanyanTrees.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/TempleOfTheSixBanyanTrees.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>Temple Of The Six Banyan Trees</figcaption>
+                        <p class="location">Yuexiu District</p>
+                        <p class="intro">
+                            The Temple of the Six Banyan Trees or Liurong Temple is a Buddhist temple in Guangzhou,
+                            originally built in AD 537…
+                        </p>
+                    </figure>
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/Shangxiajiu.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/Shangxiajiu.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>Shangxiajiu Street</figcaption>
+                        <p class="location">Liwan District</p>
+                        <p class="intro">
+                            Shangxiajiu is a commercial pedestrian street in Guangzhou.
+                            It is the first business street in Guangzhou…
+                        </p>
+                    </figure>
+                    <figure>
+                        <div class="image-container">
+                            <img src="./images/sight/MuseumOfTheNanyue.jpg" class="image-content">
+                            <div class="overlay">
+                                <a href="./sights-detail/MuseumOfTheNanyue.html">Continue Reading</a>
+                            </div>
+                        </div>
+                        <figcaption>Museum Of The Nanyue</figcaption>
+                        <p class="location">Yuexiu District</p>
+                        <p class="intro">
+                            The Museum of the Mausoleum of the Nanyue King
+                            houses the 2,000-year-old tomb of the Nanyue King Zhao Mo…
+                        </p>
+                    </figure>
+                </div>
+
+                <button class="glider-next">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+
+                <div id="dots" class="glider-dots"></div>
+            </div>
+        </section>
+
+        <!-- custom -->
+        <section>
+            <div id="custom">
+                <h1><span class="change-color">Customs</span> in Guangzhou</h1>
+                <p>Discover some traditional customs here!</p>
+
+                <!-- Yum cha -->
+                <div id="yumcha" class="row">
+                    <div class="custom-intro">
+                        <h2>Yum Cha</h2>
+                        <p>
+                            Yum cha, also known as going for dim sum, is the Cantonese tradition of brunch
+                            involving Chinese tea and dim sum. The practice is popular in Cantonese-speaking regions,
+                            including Guangdong, Guangxi, Hong Kong, and Macau.
+                            It is also carried out in other regions worldwide where there are overseas Chinese
+                            communities.
+                            Yum cha generally involves small portions of steamed, pan-fried, and deep-fried dim sum
+                            dishes
+                            served in bamboo steamers, which are designed to be eaten communally and washed down with
+                            tea.
+                            People often go to yum cha in large groups for family get-togethers or celebrations.
+                        </p>
+                    </div>
+                    <div class="custom-photo">
+                        <img src="./images/custom/YumCha/1.jpg">
+                        <img src="./images/custom/YumCha/2.jpg">
+                        <img src="./images/custom/YumCha/3.jpg">
+                        <img src="./images/custom/YumCha/4.jpg">
+                        <img src="./images/custom/YumCha/5.jpg">
+                        <img src="./images/custom/YumCha/6.jpg">
+                    </div>
+                </div>
+
+                <!-- Wedding -->
+                <div id="wedding" class="row">
+                    <div class="custom-intro">
+                        <h2>Three Letters and six etiquettes</h2>
+                        <p>
+                            People in Guangzhou follow the tradition of Chinese wedding which is three letters and six
+                            etiquettes.
+                            Three letters are considered to be Betrothal Letter, Gift Letter and Wedding Letter.
+                            Six etiquettes are considered to be Proposal, Birth Date Matching, Presenting Betrothal
+                            Gifts,
+                            Presenting Wedding Gifts, Arranging The Marriage and The Wedding Ceremony.
+                            What's new in Guangzhou is that birdes usually wear a Dragon and Phoenix Skirt and grooms
+                            are expected to give a
+                            pair of Dragon and Phoenix Bracelets.
+                        </p>
+                    </div>
+                    <div class="custom-photo">
+                        <img src="./images/custom/Wedding/1.jpg">
+                        <img src="./images/custom/Wedding/2.jpg">
+                        <img src="./images/custom/Wedding/3.jpg">
+                        <img src="./images/custom/Wedding/4.jpg">
+                        <img src="./images/custom/Wedding/5.jpg">
+                        <img src="./images/custom/Wedding/6.jpg">
+                    </div>
+                </div>
+
+                <!-- Flower fair -->
+                <div id="flowerfair" class="row">
+                    <div class="custom-intro">
+                        <h2>Flower fair</h2>
+                        <p>
+                            On Chinese New Year's Eve all around Guangzhou,
+                            there is a rush of crowds shopping for plants and flowers, before a fun evening with family
+                            and friends.
+                            It is an old custom. The origin of the flower fairs can be traced back to the ancient night
+                            flower fair.
+                            Buying flowers is so important among the Cantonese people in Guangdong and Hong Kong that
+                            there is an old saying: "No flower fairs, no Spring Festival."
+                        </p>
+                    </div>
+                    <div class="custom-photo">
+                        <img src="./images/custom/FlowerFair/1.jpg">
+                        <img src="./images/custom/FlowerFair/2.jpg">
+                        <img src="./images/custom/FlowerFair/3.jpg">
+                        <img src="./images/custom/FlowerFair/4.jpg">
+                        <img src="./images/custom/FlowerFair/5.jpg">
+                        <img src="./images/custom/FlowerFair/6.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- development -->
+        <section>
+            <div id="development">
+                <h1><span class="change-color">Development</span> in Guangzhou</h1>
+                <p>Follow the timeline to seize the development steps!</p>
+                <div class="timeline">
+
+                    <div class="develop-container left">
+                        <div class="develop-content">
+                            <h2>2004</h2>
+                            <p>
+                                The results of the poll at the plenary session of the Doha Olympic Council of Qatar
+                                showed that Guangzhou successfully bid for the 2010 Asian Games.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="develop-container right">
+                        <div class="develop-content">
+                            <h2>2006</h2>
+                            <p>
+                                The 100th China Export Commodities Fair (Canton Fair) was held in Guangzhou.
+                                Wen Jiabao attended the meeting and announced that from the next (101st),
+                                China Export Commodities Fair will be officially renamed as China Import and Export
+                                Fair.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="develop-container left">
+                        <div class="develop-content">
+                            <h2>2008</h2>
+                            <p>
+                                The starting ceremony of the Beijing 2008 Olympic Torch Relay Guangzhou Station
+                                was held at the West Square of the Guangzhou Baiyun International Convention Center.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="develop-container right">
+                        <div class="develop-content">
+                            <h2>2010</h2>
+                            <p>
+                                The Bus Rapid Transit(BRT) Test Line in Zhongshan Road officially opened
+                                for operation after more than a year of construction.<br>
+                                The opening ceremony of the 16th Asian Games was held in Guangzhou.
+                                Chinese Premier Wen Jiabao attended and announced the opening.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="develop-container left">
+                        <div class="develop-content">
+                            <h2>2012</h2>
+                            <p>
+                                Guangzhou Evergrande played in the AFC Champions League
+                                for the first time in club's history after winning the league title in the 2011 season.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="develop-container right">
+                        <div class="develop-content">
+                            <h2>2016</h2>
+                            <p>
+                                The State Council approved the “Guangzhou City Master Plan (2011-2020)”,
+                                clarifying that Guangzhou is a national historical and cultural city,
+                                an important central city, an international business center
+                                and an integrated transportation hub in China.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="develop-container left">
+                        <div class="develop-content">
+                            <h2>2018</h2>
+                            <p>
+                                The Hong Kong section of the Guangzhou-Shenzhen-Hong Kong Express Rail Link,
+                                which was built in 8 years, was opened. The 141-kilometer-long Guangzhou-Shenzhen-Hong
+                                Kong
+                                high-speed railway was officially launched.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- map -->
+        <section>
+            <div id="map">
+                <h1><span class="change-color">Map</span> of Guangzhou</h1>
+                <p>Use this map to figure out where Guangzhou is!</p>
+                <div id="map-content"></div>
+            </div>
+        </section>
+
+        <!-- forum -->
+        <section>
+            <div id="forum">
+                <h1><span class="change-color">Forum</span> of this website</h1>
+                <p>Leave anything you want to say here!</p>
+
+                <div id="forum-content">
+
+                    <div id="inputBlock">
+                        <textarea id="inputArea" placeholder="Type here..."></textarea>
+                    </div>
+
+                    <div id="selectBlock">
+                        <button id="add">Add</button>
+                        <button id="select">Select All</button>
+                        <button id="deselect">Deselect All</button>
+                        <button id="delete">Delete</button>
+                    </div>
+
+                    <div id="outputBlock"></div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!----------------- footer ----------------->
+    <div id="footer">
+        <p>
+            &copy;2019 	 &#10084;  Made by Chenyang
+        </p>
+    </div>
+
+    <script src="./index.js"></script>
+
+    <script src="./lib/glider.min.js"></script>
+
+    <script>
+
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            draggable: false,
+            dots: '#dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACqs2l_2CZLew3H1YOukhrxOUO12AHB1Y&callback=initMap">
+    </script>
+</body>
+
+</html>

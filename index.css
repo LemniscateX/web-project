@@ -1,0 +1,396 @@
+/*----------------- global setting -----------------*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.change-color {
+    color: rgb(78, 81, 158);
+}
+
+#sight, #custom, #development, #map, #forum{
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#sight h1, #custom h1, #development h1, #map h1, #forum h1 {
+    font-size: 35px;
+}
+
+/*----------------- navigation setting -----------------*/
+#nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: 0.5s;
+}
+
+#nav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    padding-left: 35px;
+}
+
+#nav a:hover {
+    color: #f1f1f1;
+}
+
+#nav #closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+}
+
+#openbtn {
+    height: 24px;
+    width: 18px;
+    padding-top: 25px;
+    padding-left: 40px;
+    position: fixed;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*----------------- header setting -----------------*/
+#header {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*----------------- slider setting -----------------*/
+#slider {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slide-content {
+    display: none;
+}
+
+#prev, #next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#prev:hover, #next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slide-number {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: rgb(78, 81, 158);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/*----------------- sight setting -----------------*/
+
+.image-container {
+    position: relative;
+    max-width: 400px;
+}
+
+.image-content {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(78, 81, 158);
+    color: #f1f1f1; 
+    width: 88.7%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    color: white;
+    text-decoration: none;
+}
+
+.glider-dot.active {
+    background: rgb(78, 81, 158);
+}
+
+.glider-prev {
+    top: 40%;
+}
+
+.glider-next {
+    top: 40%;
+}
+
+
+figcaption {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.location {
+    color: rgb(164, 165, 168);
+}
+
+/*----------------- custom setting -----------------*/
+.custom-photo {
+    column-count: 3;
+    text-align: center;
+}
+
+.custom-photo img {
+    width: 420px;
+}
+
+@media (max-width: 1200px) {
+    .custom-photo {
+    column-count: 2;
+    }
+}
+
+@media (max-width: 900px) {
+    .custom-photo {
+    column-count: 1;
+    }
+}
+
+.custom-intro {
+    background: rgb(241, 240, 255);
+    padding: 40px;
+    margin: 30px 0;
+    text-align: center;
+    line-height: 40px;
+}
+
+.custom-intro p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/*----------------- development setting -----------------*/
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+  
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(78, 81, 158);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+.develop-container {
+    padding: 5px 0;
+    position: relative;
+    background-color: white;
+    width: 50%;
+}
+
+.develop-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid rgb(178, 176, 204);
+    top: 40%;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+.left {
+    left: 0;
+    text-align: right;
+}
+  
+.right {
+    left: 50%;
+    text-align: left;
+}
+  
+.right::after {
+    left: -16px;
+}
+  
+.develop-content {
+    padding: 20px 40px;
+    margin: 10px 40px;
+    background-color: rgb(230, 235, 240);
+    position: relative;
+    border-radius: 6px;
+}
+
+.develop-content p {
+    line-height: 30px;
+}
+
+/*----------------- map setting -----------------*/
+#map-content {
+    width: 100%;
+    height: 650px;
+    margin-top: 30px;
+}
+
+/*----------------- forum setting -----------------*/
+#forum {
+    margin-bottom: 60px;
+}
+
+#inputArea {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    border: 1px solid #eee;
+    outline: none;
+    box-shadow: none;
+    width: 1278px;
+    height: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+#selectBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+#selectBlock button {
+    color: #fff;
+    background-color: rgb(78, 81, 158);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    width: 20%;
+    height: 44px;
+
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+}
+
+#selectBlock button:hover {
+    cursor: pointer;
+    color: rgb(78, 81, 158);
+    background-color: #f4f4f4;
+}
+
+#outputBlock li {
+    list-style: none;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+input[type = 'checkbox'] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/*----------------- footer setting -----------------*/
+#footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+    color: white;
+    background-color: #111;
+
+    width: 100%;
+    height: 80px;
+
+    padding-top: 40px;
+}
